@@ -1,0 +1,1 @@
+#org.springframework.context.ApplicationContextInitializer=gcl.kzl.mybatis.initializer.MyApplicationContextInitializer

@@ -1,0 +1,45 @@
+server:
+  port: 8028
+
+spring:
+  application:
+    name: gcl.kzl.mybatis
+  datasource:
+    name: mybatistest
+    url: jdbc:mysql://192.168.138.128:3306/mybatisdb
+    username: root
+    password: password(G5PairJfudvrFSvZIgEkFg==)
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+#context:
+#  initializer:
+#    classes: gcl.kzl.mybatis.initializer.MyApplicationContextInitializer
+
+mybatis:
+  mapper-locations: classpath*:/mapping/*.xml
+
+eureka:
+  instance:
+    prefer-ip-address: true
+    instanceId: ${spring.application.name}:${random.value}
+    lease-renewal-interval-in-seconds: 10
+    lease-expiration-duration-in-seconds: 30
+  client:
+    service-url:
+      defaultZone: http://192.168.138.128:8761/eureka/
+    healthcheck:
+      enabled: true
+
+jasypt:
+  encryptor:
+    password: gclkzl
+    property:
+      prefix: password(
+      suffix: )
+
+logging:
+  level:
+    root: info
+    debugLogger: debug
+    runLogger: info
+    interfaceLogger: info
