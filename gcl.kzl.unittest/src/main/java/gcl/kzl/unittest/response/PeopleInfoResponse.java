@@ -10,7 +10,6 @@ import java.util.List;
  * @author gchliangcd
  */
 @Data
-public class PeopleInfoResponse
-{
+public class PeopleInfoResponse {
     private List<Person> people = new ArrayList<>();
 }

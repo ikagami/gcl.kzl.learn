@@ -12,11 +12,9 @@ import org.springframework.web.bind.annotation.*;
  */
 @RestController
 @RequestMapping("/people")
-public class QueryPeopleController
-{
+public class QueryPeopleController {
     @RequestMapping(value = "info", method = RequestMethod.GET)
-    public ResponseEntity<PeopleInfoResponse> queryPeopleInfo()
-    {
+    public ResponseEntity<PeopleInfoResponse> queryPeopleInfo() {
         PeopleInfoResponse response = new PeopleInfoResponse();
         Person person = new Person("1", "p1", "female", 16);
         response.getPeople().add(person);
