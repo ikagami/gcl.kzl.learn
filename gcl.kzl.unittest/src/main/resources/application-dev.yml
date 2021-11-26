@@ -4,3 +4,5 @@ server:
 spring:
   application:
     name: gcl.kzl.unittest
+  main:
+    log-startup-info: true

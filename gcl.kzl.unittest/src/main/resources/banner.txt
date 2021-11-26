@@ -1,0 +1,7 @@
+gcl banner start
+${application.version}
+${application.formatted-version}
+${spring-boot.version}
+${spring-boot.formatted-version}
+${application.title}
+gcl banner end
