@@ -1,4 +1,4 @@
-package gcl.kzl.unittest.service;
+package gcl.kzl.unittest.bootstrap;
 
 import org.springframework.boot.availability.AvailabilityChangeEvent;
 import org.springframework.boot.availability.ReadinessState;
