@@ -6,3 +6,7 @@ spring:
     name: gcl.kzl.unittest
   main:
     log-startup-info: true
+
+logging:
+  file:
+    name: ./gcl.kzl.unittest/log/test.log
