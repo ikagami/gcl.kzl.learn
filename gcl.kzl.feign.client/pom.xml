@@ -19,7 +19,7 @@
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <spring-cloud.version>Greenwich.SR1</spring-cloud.version>
         <lombok.version>1.18.8</lombok.version>
-        <okhttp3.version>4.2.2</okhttp3.version>
+        <okhttp3.version>4.9.2</okhttp3.version>
     </properties>
 
     <dependencies>
